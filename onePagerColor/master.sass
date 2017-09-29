@@ -1,0 +1,107 @@
+html, body, h1, h2, h3, p
+  margin: 0
+  padding: 0
+  border: 0
+  line-height: 1
+  font-size: 18px
+  color: #000000
+  font-family: Helvetica, sans-serif
+  text-align: center
+// html
+//   background: url(inc/bgImg.png) no-repeat center center fixed
+//   -webkit-background-size: cover
+//   -moz-background-size: cover
+//   -o-background-size: cover
+//   background-size: cover
+
+#bgContainer
+  padding: 0
+  margin: 0
+  border: 0
+  background: url(inc/bgImg.png) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  height: 100vh
+  z-index: 1
+#waveContainer
+  padding: 0
+  margin: 0
+  border: 0
+  background: url(inc/waves1.png) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  height: 100vh
+  width: 100vw
+  z-index: 100
+  animation: pulse1 7s infinite
+  position: absolute
+h1
+  display: block
+  font-size: 60px
+  font-weight: 900
+  padding: 10% 0 0 0
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2)
+#gogLogo
+  padding: 6% 0 0 0
+  max-width: 50%
+  min-width: 250px
+  margin: 0 auto
+p
+  text-align: center
+  padding: 40px 0 0 0
+  margin: 0 25.5%
+  line-height: 1.4
+ul
+  padding: 2% 0
+  width: 100%
+  // background-color: rgba(0, 0, 0, 0.7)
+
+li
+  list-style: none
+  display: inline
+  margin: 0 20px
+  a
+    color: #000000
+    text-decoration: none
+    font-size: 20px
+    text-shadow: 1px 1px 10px rgba(41, 39, 19, 0.2)
+    transition: text-shadow .3s
+    font-weight: 500
+  a:hover
+    text-shadow: 1px 1px 10px rgba(41, 39, 19, 0.4)
+// @keyframes pulse1
+//   0%
+//     background-position: 0%
+//   50%
+//     background-position: 5%
+//   70%
+//     background-position: 50%
+//   90%
+//     background-position: 5%
+//   100%
+//     background-position: 0%
+@media screen and (max-width: 640px)
+  ul
+    // background-color: rgba(41, 39, 19, 0.8)
+    background-color: rgba(0, 0, 0, 0.47)
+  p
+    color: rgba(0, 0, 0,0.6)
+    margin: 0 10%
+    font-size: 16px
+@media screen and (max-width: 405px)
+  #gogLogo
+    padding: 40px 0 0 0
+  #bgContainer
+    background: url(inc/bgImg.png) no-repeat center center fixed
+    background-position: -210px -100px
+  p
+    margin: 0 10%
+    font-size: 16px
+  h1
+    font-size: 50px
+  li
+    margin: 0 10px
